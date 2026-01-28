@@ -1,0 +1,92 @@
+
+.cart-container {
+  max-width: 900px;
+  margin: 60px auto 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.cart-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+}
+
+.order-card {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.order-card p {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.order-card strong {
+  color: #000;
+  font-weight: 600;
+}
+
+.order-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.view-btn {
+  padding: 8px 16px;
+  background-color: #0070f3;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.view-btn:hover {
+  background-color: #005bb5;
+  transform: translateY(-2px);
+}
+
+.view-btn:active {
+  background-color: #004080;
+  transform: translateY(0);
+}
+
+.cancel-btn {
+  padding: 8px 16px;
+  background-color: #ff4d4f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.cancel-btn:hover {
+  background-color: #d9363e;
+  transform: translateY(-2px);
+}
+
+.cancel-btn:active {
+  background-color: #b02a2a;
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  .order-actions {
+    flex-direction: column;
+  }
+}

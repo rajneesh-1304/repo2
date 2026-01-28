@@ -1,0 +1,43 @@
+/* orders.css */
+
+.cart-container {
+  max-width: 800px;
+  margin: 60px auto 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.cart-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.order-item-card {
+  background-color: #fff;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.order-item-card p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.order-item-card strong {
+  color: #000;
+}
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #444;
+  font-size: 22px;
+}

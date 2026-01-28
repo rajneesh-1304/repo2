@@ -1,0 +1,58 @@
+
+.admin-containerrrr {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 24px;
+  background-color: #f1f3f6; 
+}
+
+.admin-title {
+  font-size: 26px;
+  font-weight: 600;
+  color: #212121;
+  margin-bottom: 20px;
+}
+
+.admin-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+}
+
+.admin-row p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #757575;
+}
+
+.btn-ban,
+.btn-unban {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 80px;
+}
+
+.btn-ban {
+  background-color: #ff6161;
+  color: #ffffff;
+}
+
+.btn-unban {
+  background-color: #2874f0;
+  color: #ffffff;
+}
+
+.admin-empty {
+  text-align: center;
+  padding: 40px;
+  color: #878787;
+  font-size: 15px;
+}

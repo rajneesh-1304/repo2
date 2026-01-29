@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = process.env.BASE_URL;
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 
 export const placeOrder = async (userId: number) => {
   const res = await axios.post(`${BASE_URL}/orders/checkout`, {

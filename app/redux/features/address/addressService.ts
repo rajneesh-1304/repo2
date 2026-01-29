@@ -1,5 +1,5 @@
 import axios from 'axios';
-const URL=process.env.BASE_URL;
+const URL=process.env.NEXT_PUBLIC_API_URL;
 const BASE_URL = `${URL}/address`; 
 
 export const getAddress = async (userId: number) => {

@@ -1,7 +1,7 @@
 import axios from "axios";
 import { setSubcategory } from "../search/searchSlice";
 
-const BASE_URL = process.env.BASE_URL;
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 
 export const addProduct = async (productData: any) => {
   try {

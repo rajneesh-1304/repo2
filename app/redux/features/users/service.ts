@@ -1,5 +1,5 @@
 import axios from "axios";
-const BASE_URL = process.env.BASE_URL;
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 
 export const loginUser= async (loginData:any)=>{
          try{
@@ -14,7 +14,7 @@ export const loginUser= async (loginData:any)=>{
 
 export const registerUser= async (registerData : any)=>{
         try{
-            const url=`${BASE_URL}/auth/register`
+            const url=`${BASE_URL}/auth/register`;
             const res= await axios.post(url, registerData);
             return res.data;
         }catch (error) {
@@ -24,16 +24,16 @@ export const registerUser= async (registerData : any)=>{
 }
 
 export const fetchAllUsers = async () => {
-  const response = await axios.get('http://localhost:3001/auth'); 
+  const response = await axios.get(`${BASE_URL}/auth`); 
   return response.data;
 };
 
 export const banUser = async (userId: number) => {
-  const response = await axios.patch(`http://localhost:3001/auth/ban/${userId}`);
+  const response = await axios.patch(`${BASE_URL}/auth/ban/${userId}`);
   return response.data;
 };
 
 export const unbanUser = async (userId: number) => {
-  const response = await axios.patch(`http://localhost:3001/auth/unban/${userId}`);
+  const response = await axios.patch(`${BASE_URL}/auth/unban/${userId}`);
   return response.data;
 };
